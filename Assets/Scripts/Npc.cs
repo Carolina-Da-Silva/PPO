@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Npc : MonoBehaviour
 {
-    public string[] dialogs;
+    public string DialogTag;
 
     private DialogManagerTest dm;
 
@@ -15,6 +15,6 @@ public class Npc : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        dm.ShowDialog(dialogs[1]);
+        // dm.ShowDialog(dialogs[1]);
     }
 }

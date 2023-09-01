@@ -1,0 +1,52 @@
+{
+  "npc0": [
+    {
+      "target": "npc0",
+      "dialog": "oi tudo bem"
+    },
+    {
+      "target": "player",
+      "dialog": "tudo bem"
+    },
+    {
+      "target": "npc1",
+      "dialog": "Eu não estou muito bem, infelizmente!"
+    },
+    {
+      "target": ["npc0", "player"],
+      "dialog": "Como assim?"
+    },
+    {
+      "target": "npc0",
+      "dialog": "ontem a noite eu perdi o pingente que minha mãe me deu, pode me ajudar a encontrar?",
+      "alternatives": {
+        "sim": [
+          {
+            "target": "player",
+            "dialog": "claro eu adoraria te ajudar"
+          },
+          {
+            "target": "npc0",
+            "dialog": "muito obrigado você é um anjo!",
+            "command": { "mission": 1 },
+            "end": true
+          }
+        ],
+        "não": [
+          {
+            "target": "player",
+            "dialog": "claro que não, eu nunca perderia tempo com isso"
+          },
+          {
+            "target": "npc0",
+            "dialog": "de qualquer forma muito obrigado, mas procure ser mais educada na próxima!",
+            "command": {},
+            "end": true
+          }
+        ]
+      }
+    }
+  ],
+  
+  "npc200": {}
+}
